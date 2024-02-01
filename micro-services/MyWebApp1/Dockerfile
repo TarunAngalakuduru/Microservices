@@ -20,7 +20,7 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 # Expose port 5000 for the application
-EXPOSE 5001
+EXPOSE 5000
 
 # Command to run the application when the container starts
 ENTRYPOINT ["dotnet", "MyWebApp.dll"]
